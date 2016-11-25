@@ -1,0 +1,81 @@
+\chapter[Introdução]{Introdução}
+\textbf{FGAme} é um motor de jogo focado em física, ou pelo termo em inglês , \textit{game} \textit{engine}, que é um \textit{framework} no qual visa simplificar o desenvolvimento de jogos eletrônicos.
+
+O projeto foi desenvolvido pelo Professor Dr. Fábio Macêdo Mendes da Faculdade do Gama - UnB para ser utilizado na disciplina de Física para Jogos para o ensino de física aplicado a jogos. Porém como o desenvolvedor principal do motor não é da área de Engenharia de Software, ele acabou sendo desenvolvido sem a devida atenção em Verificação e Validação.
+
+Ao inicio do projeto a \textit{engine} apresentava em torno de 30\% de cobertura de testes unitários e com a \textit{build} da ferramenta de integração contínua Travis falhando. Também não foi feito nenhum tipo de análise para verificar a qualidade dos testes unitários implementados.
+
+
+
+Esse software pode ser acessado no seguinte \href{https://github.com/fabiommendes/FGAme}{endereço}%
+\footnote{https://github.com/fabiommendes/FGAme}
+
+\section{Problema}
+
+O maior problema encontrado no software, é o fato da cobertura de testes se encontra insatisfatória para garantir uma que a \textit{engine} seja realmente estável a ponto de ser natural a contribuição para a mesma como um software livre.
+    
+Além dos problemas relativos à falta de cobertura de teste, existe ainda a incerteza da qualidade dos testes já implementados, não garantindo que as funcionalidades as quais o mesmo aponta o teste estejam realmente estáveis.
+
+Como prova deste problema, podemos perceber que a integração contínua no software está quebrando, não sendo possível a análise automática da qualidade da ferramenta.
+
+\begin{itemize}
+\item Baixa Verificação dos Testes unitários.
+\item Incerteza da qualidade dos testes já implementados.
+\item Integração contínua no software está quebrando.
+\item Cobertura de testes se encontra insatisfatória.
+\end{itemize}
+
+
+
+Melhorar a confiabilidade dos testes implementados.
+Verificar a integridade da \textit{build} de \textit{software}.
+
+\section{Objetivos Gerais}
+\begin{itemize}
+    \item Melhorar a confiabilidade dos testes implementados.
+    \item Verificar a integridade da \textit{build} de \textit{software}.
+\end{itemize}
+
+\section{Objetivos Específicos }
+\begin{itemize}
+    \item Aumentar a cobertura de testes.
+    \item Otimizar a verificação os testes unitários no momento da integração.
+\end{itemize}
+
+\section{Questões de Pesquisa}
+\begin{itemize}
+    \item Como aumentar a confiabilidade dos testes unitários?
+    \item Como garantir uma melhor qualidade das \textit{build} de software?
+    \item Testes em \textit{python}?
+\end{itemize}
+
+\subsection{Metodologia}
+\begin{itemize}
+    \item Definição de palavras-chave
+    \item Realizar pesquisa manuais nas principais bases de dados,\textit{ Scopus, IEEEXplorer, ACM.}
+    \item \textit{Snowball} nos artigos com grande relevância.
+\end{itemize}
+
+\section{Resultados Esperados}
+\subsection{Abordagem}
+\begin{itemize}
+    \item Garantir a verificação automática dos testes unitários, através da correção das falhas existentes na Integração continua, melhorando assim a entrega das \textit{Build}'s do Software.  
+    \item Aumento da garantia de qualidade do software, com o incremento da cobertura de testes de 30\% até 55\%.
+\end{itemize}
+
+\subsection{Métodos}
+\begin{itemize}
+    \item Realizar testes unitários para aumentar a cobertura de software da \textbf{FGAme}.
+\end{itemize}
+
+\subsection{Técnicas}
+\begin{itemize}
+    \item Testes caixa branca.
+\end{itemize}
+
+\subsection{Ferramentas}
+As ferramentas utilizadas neste trabalho.
+\begin{itemize}
+    \item \href{http://doc.pytest.org/en/latest/}{PyTest}\footnote{http://doc.pytest.org/en/latest/}: Ferramenta utilizada para a realização dos testes unitários.
+    \item \href{https://travis-ci.org/fabiommendes/FGAme}{Travis}\footnote{https://travis-ci.org/fabiommendes/FGAme}: Ferramenta utilizada a verificação da Build, através da Integração Continua.
+\end{itemize}

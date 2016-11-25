@@ -1,0 +1,91 @@
+\chapter{Referencial Teórico}
+
+    Para realizar o levantamento do referencial teórico foi utilizada a técnica de revisão de literatura.
+    Segundo \citeonline{revisao_de_literatura}, uma revisão de literatura comporta uma parte muito importante no processo de investigação, 
+    uma vez estabelecida por localizar, analisar, sintetizar e interpretar a investigação prévia referente a uma área de estudo. 
+    Além disso, uma boa revisão de literatura auxilia no entendimento de um problema e desenvolvimento dos conhecimentos, 
+    conforme \apudonline{livro_sistematizacao_conhecimento}{revisao_de_literatura}, “cada investigador analisa minuciosamente os trabalhos dos investigadores 
+    que o precederam e, só então, compreendido o testemunho que lhe foi confiado, parte equipado para a sua própria aventura”, 
+    ou seja, ao se iniciar o processo de revisão de literatura raramente não existirão assuntos abordados no passado, sobre o 
+    mesmo tema ou similares, que auxiliarão como fonte de conhecimento para a atual pesquisa.
+
+    Novamente, segundo \citeonline{revisao_de_literatura}, os propósitos da revisão de literatura num estudo de investigação são:
+
+    \begin{itemize}
+
+        \item \textbf{Delimitar o problema de investigação:} formular uma definição concreta sobre o que será investigado visando não comprometer todo o trabalho com problemas mal delimitados;
+        \item \textbf{Procurar novas linhas de investigação:} consiste em entender o que já foi realizado sobre um determinado problema e buscar pelas suas áreas que ainda não foram ou foram pouco exploradas;
+        \item \textbf{Evitar abordagens infrutíferas:} buscar que as linhas de investigação definidas sejam proveitosas e possuam resultados significativos;
+        \item \textbf{Ganhar perspectivas metodológicas:} não rever apenas os resultados do estudo, mas sim, realizar uma leitura geral sobre todos os tópicos abordados;
+        \item \textbf{Identificar recomendações para investigações futuras:} após finalizado o estudo, identificar novas questões e sugestões para investigações futuras.
+
+    \end{itemize}
+
+\vfill
+\pagebreak
+
+    Para este trabalho o propósito da revisão será ganhar perspectivas metodológicas e desta forma contemplará os conceitos de:
+
+    \begin{itemize}
+
+        \item Testes Unitários;
+        \item Testes de Integração;
+        \item \textit{Framework} de Testes.
+
+    \end{itemize}
+
+
+\section{Teste de \textit{Software}}
+    Teste de \textit{software} é o processo de execução de um produto para averiguar se ele atingiu suas especificações e funciona corretamente em seu ambiente alvo \cite{artigo_intro_teste}.
+
+    De acordo com \citeonline{sw_test_tech}, um bom teste é o que possui uma alta probabilidade de encontrar um erro ainda não descoberto e um teste bem sucedido é o que de fato descobre erros desconhecidos.
+
+    Esses testes são estruturados em níveis, cada um com um determinado objetivo dentro do conjunto de testes, de modo a garantir a qualidade do produto em desenvolvimento \cite{sw_test_tech}.
+
+    Conforme já mencionado, tendo em foco a proposta deste trabalho, serão melhores abordados os testes em seus níveis unitários e de integração.
+
+    \subsection{Testes Unitários}
+        Possui como objetivo verificar a existência de defeitos em cada módulo do projeto. Seu alvo são os métodos desenvolvidos ou pequenos trechos específicos de código \cite{artigo_intro_teste}.
+        
+        É realizado durante o desenvolvimento, pelo próprio desenvolvedor, pois testa a unidade básica de \textit{software}, que é o menor ``pedaço''  testável, por sua vez chamado de unidade, dando origem ao nome deste tipo de teste \cite{sw_test_tech}.
+        
+        Um exemplo de objetivo do teste unitário é a procura pela identificação de erros de lógica e de implementação \cite{maldonado}.
+
+    \subsection{Testes de Integração}
+        Possui como objetivo averiguar a existência de falhas relacionadas a interface do \textit{software} entre seus diferentes módulos quando estes são integrados \cite{artigo_intro_teste}.
+        
+        É realizado quando uma estrutura maior é formada (devido a integração de dois ou mais módulos), sendo que os módulos possuem suas especificações individuais testadas, porém olhando-se para o conjunto \cite{sw_test_tech}. A medida que essas estruturas vão sendo testadas, a estrutura de programa que foi determinada pelo projeto vai sendo construída \cite{maldonado}.
+
+    \subsection{\textit{Framework} de Testes}
+        Segundo \citeonline{artigo_oo_reuso_software}, a programação orientada a objetos é muita vezes utilizada para promover o reuso de software. Para \citeonline{artigo_reuso_classes}, algumas linguagens, como \textit{Smalltalk}, são utilizadas tanto para reduzir o tempo de desenvolvimento quanto o custo de manutenções, simplificando a criação de novos sistemas e de novas versões para sistemas já existentes, afirma, também, que “componentes de um programa devem ser projetados para reusabilidade”, o qual pode ser visto de maneira clara, por exemplo, em um sistema bancário, pela sua necessidade de recebimento e troca de informações com diversos outros sistemas.
+
+        Novamente, segundo \citeonline{artigo_reuso_classes}, um “design abstrato orientado a objetos”, também chamado de \textit{framework}, consiste em uma classe abstrata para cada principal componente, onde as interfaces entre os componentes do design são definidas em termos de um conjunto de mensagens, além disso, “\textit{frameworks} proveem uma maneira de reutilizar código que é resistente a mais tentativas de reusos convencionais”, ou seja, componentes independentes de uma aplicação podem ser reutilizados mais facilmente.
+
+        \citeonline{artigo_reuso_classes}, compara “programas esqueletos” com \textit{frameworks}, os quais consistem em uma abordagem tradicional de reutilização de código e na garantia de consistência entre todos os componentes de um sistema sobre a mudança de algum requisito, respectivamente. O autor também realiza uma comparação entre os \textit{frameworks} do tipo “caixa-branca” e “caixa-preta”, onde o primeiro é responsável por especificar o comportamento de uma aplicação adicionando-se métodos para subclasses de uma ou mais de suas classes, ou seja, a implementação deste tipo de \textit{framework} deve ser conhecida para sua utilização, já o segundo consiste no uso de um protocolo responsável por definir uma interface entre os componentes, assim, o usuário precisaria entender apenas como funciona a interface externa dos componentes para utilizá-los.
+
+        Em um contexto de testes de \textit{software}, \citeonline{livro_x_unit}, propõe a ideia de automação de testes seguindo os princípios de que testes devem:
+
+        \begin{itemize}
+
+        \item Ajudar na melhoria de qualidade;
+        \item Ajudar no entendimento de um Sistema Em Teste (SUT);
+        \item Reduzir riscos;
+        \item Ser fáceis de serem escritos, executados e mantidos;
+        \item Possuir manutenção mínima conforme a evolução de seu sistema.
+
+        \end{itemize}
+
+        Para \citeonline{livro_x_unit}, escrever e executar testes automatizados envolve várias etapas que geravam um processo “tedioso, consumidor de tempo, propenso a erros e caro”, além disso, muitas dessas etapas eram repetidas dentre os diversos testes, com isso em mente, uma maneira eficiente de minimizar todo este esforço gerado consistia na utilização de um \textit{framework} de automação de testes. Segundo o autor, esse \textit{framework} deveria realizar a suíte de testes e o registro de seus resultados pelo meio de alguns mecanismos, os quais consistiam em:
+
+        \begin{itemize}
+
+        \item Habilidade de encontrar testes individuais;
+        \item Reunir os testes individuais em uma suíte de testes;
+        \item Executar cada teste individualmente;
+        \item Verificar os resultados esperados;
+        \item Coletar e reportar qualquer falha ou erro;
+        \item Realizar uma limpeza quando ocorrerem falhas ou erros.
+
+        \end{itemize}
+
+        Todas essas necessidades são retratadas bem por \citeonline{livro_x_unit}, o qual salienta que a utilização de um \textit{framework} de testes ajuda a isolar a lógica necessária para realizar suas execuções de suas lógicas funcionais, além disso, tal abordagem pode ajudar na redução de duplicação de código e minimização na ocorrência de “testes obscuros”, os quais são difíceis de serem entendidos e manutenidos, podendo deixar com que bugs passem despercebidos.

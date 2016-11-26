@@ -27,17 +27,17 @@ Neste capítulo é apresentado a execução dos testes realizados na \textbf{FGA
 \section{Instalação da \textbf{FGAme}}
 Para a instalação da \textbf{FGAme}, é necessário a utilização da linguagem \textit{Python} na versão 3.4 ou superior, além da utilização do programa de gerência de dependência \textit{PIP}.
 
-Este procedimento funcionara em sistemas \textit{debian based}, tais comandos devem ser executados como administrador, então deve-se colocar \textit{sudo}, sempre que solicitado.
+Este procedimento funcionará em sistemas \textit{debian based}, tais comandos devem ser executados como administrador, então deve-se colocar \textit{sudo}, sempre que solicitado.
 
 \begin{lstlisting}
 $ apt-get update
 $ apt-get -y install python3-pip
 $ apt-get -y install python3-dev
 $ apt-get -y install python3-pil
-$ apt-get -y python3-numpy 
+$ apt-get -y python3-numpy
 \end{lstlisting}
 
-Após instalar as o \textit{python3} com o \textit{pip}, prossegue-se com a instalação do modulo \textbf{FGAme}, bem como o \textit{Framework} de testes unitários \textit{pygame}, que deve ser baixado e compilado localmente, utiliza-se o \textit{mercurial} ferramenta de controle de versão semelhante ao \textit{git}, clona-se o repositório da \textbf{FGAme}, e prossegue-se com a instalação.
+Após instalar as o \textit{python3} com o \textit{pip}, prossegue-se com a instalação do módulo \textbf{FGAme}, bem como o \textit{Framework} de testes unitários \textit{pygame}, que deve ser baixado e compilado localmente, utiliza-se o \textit{mercurial} ferramenta de controle de versão semelhante ao \textit{git}, clona-se o repositório da \textbf{FGAme}, e prossegue-se com a instalação.
 
 \begin{lstlisting}
 $ python3 -m pip install FGAme
@@ -47,7 +47,7 @@ $ python3 pygame/setup.py build
 $ python3 pygame/setup.py install
 \end{lstlisting}
 
-Continuando instala-se o conjunto de dependências adicionais para o funcionamento da \textbf{FGAme}.
+Continuando, instala-se o conjunto de dependências adicionais para o funcionamento da \textbf{FGAme}.
 
 \begin{lstlisting}
 $ apt-get update
@@ -65,15 +65,15 @@ $ pip install -r requirements-dev.txt
 $ pip install -r requirements.txt
 \end{lstlisting}
 
-Após a execução destes passos a \textit{engine} provavelmente já estará funcionando normalmente em sua totalidade.
+Após a execução destes passos, a \textit{engine} provavelmente já estará funcionando normalmente em sua totalidade.
 
 \section{Execução dos testes}
 
 Para a realização dos testes, foi inicialmente marcado uma reunião com o Prof.Fábio Macedo Mendes, responsável pelo desenvolvimento da \textbf{FGAme}, nesta reunião o professor concedeu um \textit{overview} sobre a \textbf{FGAme}, bem como a realização de testes na mesma, descrevendo as principais classes e módulos existentes no \textit{software}.
 
-Nesta reunião o professor também expôs algumas classes que deveriam demandar uma atenção maior por parte da equipe de testes. 
+Nesta reunião o professor também expôs algumas classes que deveriam demandar uma atenção maior por parte da equipe de testes.
 
-Na execução dos testes houve uma série de imprevistos, que ocasionou em diversos problemas para a equipe de testadores, sendo eles:
+Na execução dos testes, houve uma série de imprevistos, que ocasionou em diversos problemas para a equipe de testadores, sendo eles:
 
 \begin{itemize}
 \item Código altamente complexo.
@@ -82,10 +82,9 @@ Na execução dos testes houve uma série de imprevistos, que ocasionou em diver
 \item Problemas na configuração do ambiente de desenvolvimento por parte de alguns testadores.
 \end{itemize}
 
+Na realização dos testes focou-se em classes que apresentavam uma melhor legibilidade, além de evidentemente, focou-se em classes que poderiam aumentar de maneira eficiente a cobertura do código.
 
-Na realização dos testes focou-se em classes que apresentavam uma melhor legibilidade, além de evidentemente focou-se em classes que poderiam aumentar de maneira eficiente a cobertura do código.
-
-No modulo responsável pelos cálculos envolvendo física, \textit{physics} executou-se os testes nas seguintes classes. 
+No módulo responsável pelos cálculos envolvendo física, \textit{physics} executou-se os testes nas seguintes classes.
 \begin{itemize}
 \item simulation.py
 \item body.py

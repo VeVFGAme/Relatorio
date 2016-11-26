@@ -82,9 +82,9 @@ Na execução dos testes, houve uma série de imprevistos, que ocasionou em dive
 \item Problemas na configuração do ambiente de desenvolvimento por parte de alguns testadores.
 \end{itemize}
 
-Na realização dos testes focou-se em classes que apresentavam uma melhor legibilidade, além de evidentemente, focou-se em classes que poderiam aumentar de maneira eficiente a cobertura do código.
+Na realização dos testes, focou-se em classes que apresentavam uma melhor legibilidade, além de evidentemente, focou-se em classes que poderiam aumentar de maneira eficiente a cobertura do código.
 
-No módulo responsável pelos cálculos envolvendo física, \textit{physics} executou-se os testes nas seguintes classes.
+No módulo responsável pelos cálculos envolvendo física, \textit{physics}, executou-se os testes nas seguintes classes.
 \begin{itemize}
 \item simulation.py
 \item body.py
@@ -97,3 +97,12 @@ Além de realizar os testes nas seguintes classes.
 \item text.py
 \item tracker.py
 \end{itemize}
+
+\section{Integração Contínua}
+
+Como a build da integração contínua que foi implementada anteriormente estava quebrando, foi decidido que ela seria arrumada, pois não faz sentido implementar testes unitários e deixar a \textit{build} do \textit{software} quebrado.
+
+Analisando a ferramenta, percebemos que o motivo da build estar quebrando não era os testes estarem escritos de maneira errônea mas sim a ferramenta não estava configurada corretamente, pois o software evoluiu e a ferramenta não foi configurada para se adequar com essa evolução.
+
+Para configurar a build, bastou-se realizar alterações no arquivo \textit{.travis.yml} e adicionar as dependências necessárias para funcionar o ambiênte de desenvolvimento.
+

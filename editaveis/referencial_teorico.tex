@@ -33,7 +33,6 @@ E como o retrabalho tende a crescer ao longo do desenvolvimento do projeto e com
 	De acordo com \cite{IEEE}, teste é descrito como a atividade na qual, execulta-se sobre condições especificas, com resultados planejados, produtos, componentes ou sistemas. Deste modo, nesta execução controlada tem-se o intuito de validar ou verificar os resultados.
 
 
-
 Segundo \cite{artigo_intro_teste}, o teste de software é uma investigação conduzida para confirmar se o produto atingiu ou não as especificações no qual o produto foi definido. O teste de software também pode fornece uma visão objetiva e independente do software para o negócio, nisto tem-se uma melhor compreendensão dos riscos na implementação. 
 
 Novamente \cite{artigo_intro_teste} descreve que, as técnicas de teste incluem, mas não estão limitados ao processo de execução de um programa, ou com a intenção de encontrar erros de software. Teste de software é qualquer atividade destinada a avaliar um atributo ou capacidade de um programa ou sistema e Determinando que ele atende aos resultados exigidos. Porém \cite{artigo_intro_teste} salienta que um bom teste é aquele que tem uma maior probalilidade de encontrar erros.
@@ -43,20 +42,35 @@ Embora crucial para a qualidade do software, o teste de software continua a ser 
 
 Teste de Software é um elemento crítico para a qualidade do produto, pois representa a revisão final da especificação, projeto e geração de código. Embora durante todo o processo de desenvolvimento de software sejam utilizadas técnicas, métodos e ferramentas a fim de evitar que erros sejam introduzidos no produto, a atividade de teste continua sendo de fundamental importância para a eliminação dos erros que persistem \cite{maldonado}.
 
-    \subsection{Testes Unitários}
-        O teste unitário tem como foco a menor unidade do projeto de software, procura erros de lógica e implementação nos módulos de forma separada. (R. S. Pressman) com adaptações.
+\subsection{Testes Unitários}
+        O teste unitário tem como foco a menor unidade do projeto de software, procura erros de lógica e implementação nos módulos de forma separada.\cite{PRESSMAN} 
 
-         Teste de Unidade também conhecido como testes unitários. Tem por objetivo explorar a menor unidade do projeto, procurando provocar falhas ocasionadas por defeitos de lógica e de implementação em cada módulo, separadamente. O universo alvo desse tipo de teste são os métodos dos objetos ou mesmo pequenos trechos de código. (NETO;DIAS,2007)
+         Teste de Unidade também conhecido como testes unitários. Tem por objetivo explorar a menor unidade do projeto, procurando provocar falhas ocasionadas por defeitos de lógica e de implementação em cada módulo, separadamente. O universo alvo desse tipo de teste são os métodos dos objetos ou mesmo pequenos trechos de código.\cite{artigo_intro_teste}.
+
+Segundo \cite{sw_test_tech} é realizado durante a fase de desenvolvimento normalmente o testador é o proprio desenvolvedor, que testa as unidades com menor granularidade no software.
         
         
+\subsection{Testes de Integração}
 
-    \subsection{Testes de Integração}
-
-        Teste de Integração: visa provocar falhas associadas às interfaces entre os módulos quando esses são integrados para construir a estrutura do software que foi estabelecida na fase de projeto 
-        (NETO;DIAS,2007)
-
-        Manter um ambiente de testes e integração contínua, é imprescindível para qualquer projeto ou desenvolvedor sério, que queira manter sua produtividade em alta e foco na entrega de valor de cada demanda, e não em tarefas repetitivas e passíveis de erro.(TRAVIS CI, 2016)
+Teste de Integração: visa provocar falhas associadas às interfaces entre os módulos quando esses são integrados para construir a estrutura do software que foi estabelecida na fase de projeto \cite{artigo_intro_teste}.
 
 
-    \subsection{\textit{Framework} de Testes}
-        
+\subsection{Qualidade de Testes}
+
+Este é um tema que sempre gereou dscução no meio da computação, com inumeros estudos voltados para responder as perguntas como as seguintes:
+
+\begin{enumerate}
+\item Até quando eu vou testar?
+\item Meu software esta bem testado?.
+\item Meus testes combrem a maior quantidade de erros possivel?
+\end{enumerate}
+
+Porém como resalta \cite{e08}, Ao falarmos de teste de software, o modo como executa-se os testes são diferentes, uma vez que os softwares possuem diversas singularidades, devendo o testador se adaptar ao contexto.
+
+Segundo \cite{e08} o teste pode ser mensurado em duas métricas, as quais possibilitam verificar a comfibialidade e identificam quantativamente valores que possibilitam a equipe um melhor acompanhamento da qualidade do \textit{software}, sendo elas:
+\begin{enumerate}
+\item Cobertura de código
+\item Casos de Teste implementados.
+\end{enumerate}
+
+

@@ -60,32 +60,18 @@ Embora crucial para a qualidade do software e amplamente Programadores e testado
  O objetivo do teste pode ser a qualidade de garantia, verificação e validação, ou estimativa de confiabilidade. 
 Priyanka e Vipin Arora  com adaptações (tradução nossa).
 
-    De acordo com \citeonline{sw_test_tech}, um bom teste é o que possui uma alta probabilidade de encontrar um erro ainda não descoberto e um teste bem sucedido é o que de fato descobre erros desconhecidos.
-
-    Esses testes são estruturados em níveis, cada um com um determinado objetivo dentro do conjunto de testes, de modo a garantir a qualidade do produto em desenvolvimento \cite{sw_test_tech}.
-
-    Conforme já mencionado, tendo em foco a proposta deste trabalho, serão melhores abordados os testes em seus níveis unitários e de integração.
+Teste de Software é um elemento crítico para a qualidade do produto, pois representa a revisão final da especificação, projeto e geração de código. Embora durante todo o processo de desenvolvimento de software sejam utilizadas técnicas, métodos e ferramentas a fim de evitar que erros sejam introduzidos no produto, a atividade de teste continua sendo de fundamental importância para a eliminação dos erros que persistem (Maldonado, 1991).
 
     \subsection{Testes Unitários}
-        Possui como objetivo verificar a existência de defeitos em cada módulo do projeto. Seu alvo são os métodos desenvolvidos ou pequenos trechos específicos de código \cite{artigo_intro_teste}.
+        O teste unitário tem como foco a menor unidade do projeto de software, procura erros de lógica e implementação nos módulos de forma separada. (R. S. Pressman) com adaptações.
         
-        É realizado durante o desenvolvimento, pelo próprio desenvolvedor, pois testa a unidade básica de \textit{software}, que é o menor ``pedaço''  testável, por sua vez chamado de unidade, dando origem ao nome deste tipo de teste \cite{sw_test_tech}.
         
-        Um exemplo de objetivo do teste unitário é a procura pela identificação de erros de lógica e de implementação \cite{maldonado}.
 
     \subsection{Testes de Integração}
-        Possui como objetivo averiguar a existência de falhas relacionadas a interface do \textit{software} entre seus diferentes módulos quando estes são integrados \cite{artigo_intro_teste}.
         
-        É realizado quando uma estrutura maior é formada (devido a integração de dois ou mais módulos), sendo que os módulos possuem suas especificações individuais testadas, porém olhando-se para o conjunto \cite{sw_test_tech}. A medida que essas estruturas vão sendo testadas, a estrutura de programa que foi determinada pelo projeto vai sendo construída \cite{maldonado}.
 
     \subsection{\textit{Framework} de Testes}
-        Segundo \citeonline{artigo_oo_reuso_software}, a programação orientada a objetos é muita vezes utilizada para promover o reuso de software. Para \citeonline{artigo_reuso_classes}, algumas linguagens, como \textit{Smalltalk}, são utilizadas tanto para reduzir o tempo de desenvolvimento quanto o custo de manutenções, simplificando a criação de novos sistemas e de novas versões para sistemas já existentes, afirma, também, que “componentes de um programa devem ser projetados para reusabilidade”, o qual pode ser visto de maneira clara, por exemplo, em um sistema bancário, pela sua necessidade de recebimento e troca de informações com diversos outros sistemas.
-
-        Novamente, segundo \citeonline{artigo_reuso_classes}, um “design abstrato orientado a objetos”, também chamado de \textit{framework}, consiste em uma classe abstrata para cada principal componente, onde as interfaces entre os componentes do design são definidas em termos de um conjunto de mensagens, além disso, “\textit{frameworks} proveem uma maneira de reutilizar código que é resistente a mais tentativas de reusos convencionais”, ou seja, componentes independentes de uma aplicação podem ser reutilizados mais facilmente.
-
-        \citeonline{artigo_reuso_classes}, compara “programas esqueletos” com \textit{frameworks}, os quais consistem em uma abordagem tradicional de reutilização de código e na garantia de consistência entre todos os componentes de um sistema sobre a mudança de algum requisito, respectivamente. O autor também realiza uma comparação entre os \textit{frameworks} do tipo “caixa-branca” e “caixa-preta”, onde o primeiro é responsável por especificar o comportamento de uma aplicação adicionando-se métodos para subclasses de uma ou mais de suas classes, ou seja, a implementação deste tipo de \textit{framework} deve ser conhecida para sua utilização, já o segundo consiste no uso de um protocolo responsável por definir uma interface entre os componentes, assim, o usuário precisaria entender apenas como funciona a interface externa dos componentes para utilizá-los.
-
-        Em um contexto de testes de \textit{software}, \citeonline{livro_x_unit}, propõe a ideia de automação de testes seguindo os princípios de que testes devem:
+        
 
         \begin{itemize}
 

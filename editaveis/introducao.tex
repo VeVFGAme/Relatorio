@@ -1,9 +1,9 @@
 \chapter[Introdução]{Introdução}
 \textbf{FGAme} é um motor de jogo focado em física, ou pelo termo em inglês , \textit{game} \textit{engine}, que é um \textit{framework} no qual visa simplificar o desenvolvimento de jogos eletrônicos.
 
-O projeto foi desenvolvido pelo Professor Dr. Fábio Macêdo Mendes da Faculdade do Gama - UnB para ser utilizado na disciplina de Física para Jogos para o ensino de física aplicado a jogos. Porém como o desenvolvedor principal do motor não é da área de Engenharia de Software, ele acabou sendo desenvolvido sem a devida atenção em Verificação e Validação.
+O projeto foi desenvolvido pelo Professor Dr. Fábio Macêdo Mendes da Faculdade do Gama - UnB para ser utilizado na disciplina de Física para Jogos para o ensino de física aplicado a jogos. Porém como o principal desenvolvedor do motor não é da área de Engenharia de Software, isso foi um dos motivos para o projeto ser desenvolvido sem a devida atenção em Verificação e Validação.
 
-Ao inicio do projeto a \textit{engine} apresentava em torno de 30\% de cobertura de testes unitários e com a \textit{build} da ferramenta de integração contínua Travis falhando. Também não foi feito nenhum tipo de análise para verificar a qualidade dos testes unitários implementados.
+Ao início do projeto a \textit{engine} apresentava em torno de 30\% de cobertura de testes unitários e com a \textit{build} da ferramenta de integração contínua Travis falhando. Também não foi feito nenhum tipo de análise para verificar a qualidade dos testes unitários implementados.
 
 
 
@@ -12,12 +12,13 @@ Esse software pode ser acessado no seguinte \href{https://github.com/fabiommende
 
 \section{Problema}
 
-O maior problema encontrado no software, é o fato da cobertura de testes se encontra insatisfatória para garantir uma que a \textit{engine} seja realmente estável a ponto de ser natural a contribuição para a mesma como um software livre.
+O maior problema encontrado no software, é o fato da cobertura de testes se encontra insatisfatória para garantir que a \textit{engine} seja realmente estável a ponto de ser natural a contribuição para a mesma como um projeto de software livre.
     
-Além dos problemas relativos à falta de cobertura de teste, existe ainda a incerteza da qualidade dos testes já implementados, não garantindo que as funcionalidades as quais o mesmo aponta o teste estejam realmente estáveis.
+Além dos problemas relativos à falta de cobertura de teste, existe ainda a incerteza da qualidade dos testes já implementados, não garantindo que as funcionalidades as quais os testes apontam estejam realmente estáveis.
 
-Como prova deste problema, podemos perceber que a integração contínua no software está quebrando, não sendo possível a análise automática da qualidade da ferramenta.
+Como prova deste problema, podemos perceber que a integração contínua no software está quebrando devido a complexidade do projeto, não sendo possível ter garantia que o software continua funcionando quando o mesmo é evoluído.
 
+Em resumo, os problemas encontrados no projeto com relação a qualidade são:
 \begin{itemize}
 \item Baixa Verificação dos Testes unitários.
 \item Incerteza da qualidade dos testes já implementados.
@@ -25,10 +26,6 @@ Como prova deste problema, podemos perceber que a integração contínua no soft
 \item Cobertura de testes se encontra insatisfatória.
 \end{itemize}
 
-
-
-Melhorar a confiabilidade dos testes implementados.
-Verificar a integridade da \textit{build} de \textit{software}.
 
 \section{Objetivos Gerais}
 \begin{itemize}
@@ -60,7 +57,7 @@ Verificar a integridade da \textit{build} de \textit{software}.
 \subsection{Abordagem}
 \begin{itemize}
     \item Garantir a verificação automática dos testes unitários, através da correção das falhas existentes na Integração continua, melhorando assim a entrega das \textit{Build}'s do Software.  
-    \item Aumento da garantia de qualidade do software, com o incremento da cobertura de testes de 30\% até 55\%.
+    \item Aumento da garantia de qualidade do software, com o incremento da cobertura de testes de 30\% para 55\%.
 \end{itemize}
 
 \subsection{Métodos}
@@ -76,6 +73,6 @@ Verificar a integridade da \textit{build} de \textit{software}.
 \subsection{Ferramentas}
 As ferramentas utilizadas neste trabalho.
 \begin{itemize}
-    \item \href{http://doc.pytest.org/en/latest/}{PyTest}\footnote{http://doc.pytest.org/en/latest/}: Ferramenta utilizada para a realização dos testes unitários.
+    \item \href{http://doc.pytest.org/en/latest/}{pytest}\footnote{http://doc.pytest.org/en/latest/}: Ferramenta utilizada para a realização dos testes unitários.
     \item \href{https://travis-ci.org/fabiommendes/FGAme}{Travis}\footnote{https://travis-ci.org/fabiommendes/FGAme}: Ferramenta utilizada a verificação da Build, através da Integração Continua.
 \end{itemize}
